@@ -1,0 +1,5 @@
+C:\Users\m1032797\Documents\Visual Studio 2015\Projects\JenkinsBTDFDemo\JenkinsBTDFDemo.Maps\bin\Debug\JenkinsBTDFDemo.Maps.dll
+C:\Users\m1032797\Documents\Visual Studio 2015\Projects\JenkinsBTDFDemo\JenkinsBTDFDemo.Maps\bin\Debug\JenkinsBTDFDemo.Maps.pdb
+C:\Users\m1032797\Documents\Visual Studio 2015\Projects\JenkinsBTDFDemo\JenkinsBTDFDemo.Maps\bin\Debug\JenkinsBTDFDemo.Schemas.dll
+C:\Users\m1032797\Documents\Visual Studio 2015\Projects\JenkinsBTDFDemo\JenkinsBTDFDemo.Maps\obj\Debug\JenkinsBTDFDemo.Maps.dll
+C:\Users\m1032797\Documents\Visual Studio 2015\Projects\JenkinsBTDFDemo\JenkinsBTDFDemo.Maps\obj\Debug\JenkinsBTDFDemo.Maps.pdb

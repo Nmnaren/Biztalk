@@ -1,0 +1,195 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="da7f7339-bcef-4a5d-bd94-5a6e44aa6e97" LowerBound="1.1" HigherBound="42.1">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="JenkinsBTDFDemo.Orchestration" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="7d07c2cd-18a1-4d5b-a822-4b09fccb7764" ParentLink="Module_PortType" LowerBound="4.1" HigherBound="11.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_1" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="2c67f714-5edc-4b20-bf4c-304bf3b137f8" ParentLink="PortType_OperationDeclaration" LowerBound="6.1" HigherBound="10.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="afae3532-25cb-4417-b46a-a5ec4b8ca690" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="8.13" HigherBound="8.42">
+                    <om:Property Name="Ref" Value="JenkinsBTDFDemoSchemas.Person" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="PortType" OID="2de57c4b-a960-49d4-a14e-f23f5558fe17" ParentLink="Module_PortType" LowerBound="11.1" HigherBound="18.1">
+            <om:Property Name="Synchronous" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="PortType_2" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="80a5159c-6b30-435d-a574-d6af1ec4561b" ParentLink="PortType_OperationDeclaration" LowerBound="13.1" HigherBound="17.1">
+                <om:Property Name="OperationType" Value="OneWay" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="Operation_1" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="4d5e0760-e87c-4c56-b3bb-eeb6ae4925c7" ParentLink="OperationDeclaration_RequestMessageRef" LowerBound="15.13" HigherBound="15.42">
+                    <om:Property Name="Ref" Value="JenkinsBTDFDemoSchemas.Client" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="b45a4f40-437d-4209-a8dc-86be33c11482" ParentLink="Module_ServiceDeclaration" LowerBound="18.1" HigherBound="41.1">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="False" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="Name" Value="JenkinsBTDFDemoOrch" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="098bddcb-d089-4d17-854c-bbed8de9ac71" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="Receive" OID="a52fc7aa-5fcb-4583-b4fc-ca6d8d98de51" ParentLink="ServiceBody_Statement" LowerBound="29.1" HigherBound="31.1">
+                    <om:Property Name="Activate" Value="True" />
+                    <om:Property Name="PortName" Value="RcvPortPerson" />
+                    <om:Property Name="MessageName" Value="PersonMsg" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Receive_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+                <om:Element Type="Construct" OID="a988dc4b-4b19-4716-9762-2ebbe4e964e8" ParentLink="ServiceBody_Statement" LowerBound="31.1" HigherBound="37.1">
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="ConstructMessage_1" />
+                    <om:Property Name="Signal" Value="False" />
+                    <om:Element Type="Transform" OID="2b49ea7c-6351-4de4-a764-c00af979455a" ParentLink="ComplexStatement_Statement" LowerBound="34.1" HigherBound="36.1">
+                        <om:Property Name="ClassName" Value="JenkinsBTDFDemo.Maps.PersonToClient" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Name" Value="Transform_1" />
+                        <om:Property Name="Signal" Value="False" />
+                        <om:Element Type="MessagePartRef" OID="23acfef5-7130-4fc9-a2fa-f4c0f77a0daf" ParentLink="Transform_InputMessagePartRef" LowerBound="35.78" HigherBound="35.87">
+                            <om:Property Name="MessageRef" Value="PersonMsg" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_1" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                        <om:Element Type="MessagePartRef" OID="f3ccc0d7-f268-4c67-93c4-04bd736055e6" ParentLink="Transform_OutputMessagePartRef" LowerBound="35.28" HigherBound="35.37">
+                            <om:Property Name="MessageRef" Value="ClientMsg" />
+                            <om:Property Name="ReportToAnalyst" Value="True" />
+                            <om:Property Name="Name" Value="MessagePartReference_2" />
+                            <om:Property Name="Signal" Value="False" />
+                        </om:Element>
+                    </om:Element>
+                    <om:Element Type="MessageRef" OID="c58303a0-a0f5-4460-92d1-033b83e0ef0e" ParentLink="Construct_MessageRef" LowerBound="32.23" HigherBound="32.32">
+                        <om:Property Name="Ref" Value="ClientMsg" />
+                        <om:Property Name="ReportToAnalyst" Value="True" />
+                        <om:Property Name="Signal" Value="False" />
+                    </om:Element>
+                </om:Element>
+                <om:Element Type="Send" OID="680b6654-6b52-4ff3-ba3c-d0d2f3fafe0b" ParentLink="ServiceBody_Statement" LowerBound="37.1" HigherBound="39.1">
+                    <om:Property Name="PortName" Value="SendPort_Client" />
+                    <om:Property Name="MessageName" Value="ClientMsg" />
+                    <om:Property Name="OperationName" Value="Operation_1" />
+                    <om:Property Name="OperationMessageName" Value="Request" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="Name" Value="Send_1" />
+                    <om:Property Name="Signal" Value="True" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="9f3d2fbe-c7c3-4bc4-9cd3-d279e3a3726e" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="21.1" HigherBound="23.1">
+                <om:Property Name="PortModifier" Value="Implements" />
+                <om:Property Name="Orientation" Value="Left" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="JenkinsBTDFDemo.Orchestration.PortType_1" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="RcvPortPerson" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="6a8fb179-7794-4942-950d-68e1488dc4c2" ParentLink="PortDeclaration_CLRAttribute" LowerBound="21.1" HigherBound="22.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="PortDeclaration" OID="a17c07c5-8dd7-41c0-b225-7c7cdc46a910" ParentLink="ServiceDeclaration_PortDeclaration" LowerBound="23.1" HigherBound="25.1">
+                <om:Property Name="PortModifier" Value="Uses" />
+                <om:Property Name="Orientation" Value="Right" />
+                <om:Property Name="PortIndex" Value="-1" />
+                <om:Property Name="IsWebPort" Value="False" />
+                <om:Property Name="OrderedDelivery" Value="False" />
+                <om:Property Name="DeliveryNotification" Value="None" />
+                <om:Property Name="Type" Value="JenkinsBTDFDemo.Orchestration.PortType_2" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="SendPort_Client" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="LogicalBindingAttribute" OID="6a809339-2f50-4bf1-b082-7d9fbe544993" ParentLink="PortDeclaration_CLRAttribute" LowerBound="23.1" HigherBound="24.1">
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="d031ed77-9151-4439-a2eb-3d33aa737316" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="25.1" HigherBound="26.1">
+                <om:Property Name="Type" Value="JenkinsBTDFDemoSchemas.Person" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="PersonMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+            <om:Element Type="MessageDeclaration" OID="7a2e5e6f-6f80-4a0b-bd65-aab3755a014f" ParentLink="ServiceDeclaration_MessageDeclaration" LowerBound="26.1" HigherBound="27.1">
+                <om:Property Name="Type" Value="JenkinsBTDFDemoSchemas.Client" />
+                <om:Property Name="ParamDirection" Value="In" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="Name" Value="ClientMsg" />
+                <om:Property Name="Signal" Value="True" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module JenkinsBTDFDemo.Orchestration
+{
+    internal porttype PortType_1
+    {
+        oneway Operation_1
+        {
+            JenkinsBTDFDemoSchemas.Person
+        };
+    };
+    internal porttype PortType_2
+    {
+        oneway Operation_1
+        {
+            JenkinsBTDFDemoSchemas.Client
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service JenkinsBTDFDemoOrch
+    {
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port implements PortType_1 RcvPortPerson;
+        [Microsoft.XLANGs.BaseTypes.LogicalBinding()]
+        port uses PortType_2 SendPort_Client;
+        message JenkinsBTDFDemoSchemas.Person PersonMsg;
+        message JenkinsBTDFDemoSchemas.Client ClientMsg;
+        body ()
+        {
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a52fc7aa-5fcb-4583-b4fc-ca6d8d98de51")]
+            activate receive (RcvPortPerson.Operation_1, PersonMsg);
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("a988dc4b-4b19-4716-9762-2ebbe4e964e8")]
+            construct ClientMsg
+            {
+                [Microsoft.XLANGs.BaseTypes.DesignerPosition("2b49ea7c-6351-4de4-a764-c00af979455a")]
+                transform (ClientMsg) = JenkinsBTDFDemo.Maps.PersonToClient (PersonMsg);
+            }
+            [Microsoft.XLANGs.BaseTypes.DesignerPosition("680b6654-6b52-4ff3-ba3c-d0d2f3fafe0b")]
+            send (SendPort_Client.Operation_1, ClientMsg);
+        }
+    }
+}
+

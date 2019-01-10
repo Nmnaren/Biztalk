@@ -1,0 +1,4 @@
+C:\Users\m1032797\Documents\Visual Studio 2015\Projects\JenkinsBTDFDemo\JenkinsBTDFDemo\bin\Debug\JenkinsBTDFDemo.Schemas.dll
+C:\Users\m1032797\Documents\Visual Studio 2015\Projects\JenkinsBTDFDemo\JenkinsBTDFDemo\bin\Debug\JenkinsBTDFDemo.Schemas.pdb
+C:\Users\m1032797\Documents\Visual Studio 2015\Projects\JenkinsBTDFDemo\JenkinsBTDFDemo\obj\Debug\JenkinsBTDFDemo.Schemas.dll
+C:\Users\m1032797\Documents\Visual Studio 2015\Projects\JenkinsBTDFDemo\JenkinsBTDFDemo\obj\Debug\JenkinsBTDFDemo.Schemas.pdb

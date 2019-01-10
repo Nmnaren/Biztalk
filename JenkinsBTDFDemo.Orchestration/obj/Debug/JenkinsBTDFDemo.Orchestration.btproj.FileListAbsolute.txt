@@ -1,0 +1,6 @@
+c:\users\m1032797\documents\visual studio 2015\Projects\JenkinsBTDFDemo\JenkinsBTDFDemo.Orchestration\bin\Debug\JenkinsBTDFDemo.Orchestration.dll
+c:\users\m1032797\documents\visual studio 2015\Projects\JenkinsBTDFDemo\JenkinsBTDFDemo.Orchestration\bin\Debug\JenkinsBTDFDemo.Orchestration.pdb
+c:\users\m1032797\documents\visual studio 2015\Projects\JenkinsBTDFDemo\JenkinsBTDFDemo.Orchestration\obj\Debug\JenkinsBTDFDemo.Orchestration.dll
+c:\users\m1032797\documents\visual studio 2015\Projects\JenkinsBTDFDemo\JenkinsBTDFDemo.Orchestration\obj\Debug\JenkinsBTDFDemo.Orchestration.pdb
+C:\Users\m1032797\Documents\Visual Studio 2015\Projects\JenkinsBTDFDemo\JenkinsBTDFDemo.Orchestration\bin\Debug\JenkinsBTDFDemo.Schemas.dll
+C:\Users\m1032797\Documents\Visual Studio 2015\Projects\JenkinsBTDFDemo\JenkinsBTDFDemo.Orchestration\bin\Debug\JenkinsBTDFDemo.Maps.dll

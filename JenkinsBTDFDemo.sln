@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JenkinsBTDFDemo.Schemas", "JenkinsBTDFDemo\JenkinsBTDFDemo.Schemas.btproj", "{F87E0948-CFA8-4445-9041-B8C5D314F8E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JenkinsBTDFDemo.Orchestration", "JenkinsBTDFDemo.Orchestration\JenkinsBTDFDemo.Orchestration.btproj", "{B042D87F-985B-491D-94F1-5F1C1A9BC272}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JenkinsBTDFDemo.Maps", "JenkinsBTDFDemo.Maps\JenkinsBTDFDemo.Maps.btproj", "{1878003B-1F5C-4BF2-8F7F-B4651EFFBF46}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{30399EFA-0F53-49F9-8E47-559DD2F05921}"
+	ProjectSection(SolutionItems) = preProject
+		Deployment\Deployment.btdfproj = Deployment\Deployment.btdfproj
+		Deployment\InstallWizard.xml = Deployment\InstallWizard.xml
+		Deployment\License.rtf = Deployment\License.rtf
+		Deployment\PortBindingsMaster.xml = Deployment\PortBindingsMaster.xml
+		Deployment\SettingsFileGenerator.xml = Deployment\SettingsFileGenerator.xml
+		Deployment\UnInstallWizard.xml = Deployment\UnInstallWizard.xml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F87E0948-CFA8-4445-9041-B8C5D314F8E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F87E0948-CFA8-4445-9041-B8C5D314F8E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F87E0948-CFA8-4445-9041-B8C5D314F8E1}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F87E0948-CFA8-4445-9041-B8C5D314F8E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F87E0948-CFA8-4445-9041-B8C5D314F8E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F87E0948-CFA8-4445-9041-B8C5D314F8E1}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B042D87F-985B-491D-94F1-5F1C1A9BC272}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B042D87F-985B-491D-94F1-5F1C1A9BC272}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B042D87F-985B-491D-94F1-5F1C1A9BC272}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B042D87F-985B-491D-94F1-5F1C1A9BC272}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B042D87F-985B-491D-94F1-5F1C1A9BC272}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B042D87F-985B-491D-94F1-5F1C1A9BC272}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{1878003B-1F5C-4BF2-8F7F-B4651EFFBF46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1878003B-1F5C-4BF2-8F7F-B4651EFFBF46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1878003B-1F5C-4BF2-8F7F-B4651EFFBF46}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1878003B-1F5C-4BF2-8F7F-B4651EFFBF46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1878003B-1F5C-4BF2-8F7F-B4651EFFBF46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1878003B-1F5C-4BF2-8F7F-B4651EFFBF46}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
